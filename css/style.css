@@ -1,38 +1,69 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+
+/* 共通 */
+
+html {
+    font-size: 100%;
 }
 
+body {
+    font-family: "Hachi Maru Pop", cursive;
+    line-height: 1.6;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* レイアウト */
+.align-center {
+    text-align: center;
+}
+
+/* ヘッダー */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
 }
 
-nav ul {
-    list-style: none;
-    background-color: #444;
-    overflow: hidden;
+.page-title {
+    font-size: 2.5rem;
     color: #fff;
-    padding: 0;
     margin: 0;
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 20px;
-}
-
-nav ul li a {
+header a {
     color: #fff;
-    text-decoration: none;
 }
 
+.main-nav {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+/* セクション */
 section {
     padding: 20px;
 }
 
+section h2 {
+    font-size: 2.5rem;
+}
+
+section p {
+    font-size: 1.6rem;
+}
+
+/* フッター */
 footer {
     background-color: #333;
     color: #fff;
@@ -40,6 +71,7 @@ footer {
     padding: 10px;
 }
 
+/* フォント */
 .hachi-maru-pop-regular {
     font-family: "Hachi Maru Pop", cursive;
     font-weight: 400;
