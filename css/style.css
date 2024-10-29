@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: "Hachi Maru Pop", cursive;
+    font-family: "Yomogi", cursive;
     line-height: 1.6;
     color: #432;
 }
@@ -26,28 +26,31 @@ img {
 }
 
 /* ヘッダー */
-header {
-    background-color: #333;
+.page-header {
     color: #fff;
+    background-color: #333;
     padding: 20px;
 }
 
-.page-title {
-    font-size: 2.5rem;
-    color: #fff;
-    margin: 0;
+.page-header :hover {
+    color: #aaa;
 }
 
-header a {
+.page-header a {
     color: #fff;
 }
 
 .main-nav {
-    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     gap: 2.5rem;
     list-style: none;
+}
+
+.main-nav a:hover {
+    color: #333;
+    background-color: #fff;
+    border-radius: 4px;
 }
 
 /* セクション */
@@ -55,12 +58,8 @@ section {
     padding: 20px;
 }
 
-section h2 {
-    font-size: 2.5rem;
-}
-
-section p {
-    font-size: 1.6rem;
+.page-title {
+    font-size: 1rem;
 }
 
 /* フッター */
@@ -82,4 +81,19 @@ footer {
     font-family: "Yomogi", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+/* メディアクエリ */
+@media (min-width: 768px) {
+    .page-header {
+        font-size: 1.5rem;
+    }
+
+    .main-nav {
+        font-size: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 3rem;
+    }
 }
